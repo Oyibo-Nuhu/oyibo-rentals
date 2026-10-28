@@ -1,0 +1,19 @@
+# Web app
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+python-multipart>=0.0.9
+pydantic[email]>=2.7,<3
+SQLAlchemy>=2.0.30,<3
+psycopg[binary]>=3.2,<4      # PostgreSQL driver (used when DATABASE_URL points at Postgres)
+PyJWT>=2.8,<3
+bcrypt>=4.1
+httpx>=0.27,<1               # Paystack API calls
+tzdata>=2024.1               # Africa/Lagos time zone on slim servers
+
+# Data science (admin analytics)
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+
+# Vehicle photos (resizing uploads and fetched photos)
+pillow>=10.3
